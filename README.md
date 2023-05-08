@@ -27,11 +27,11 @@ The script will create a bar chart image file named word_occurrences_per_page.pn
 
 You can customize the following variables in the script to change the appearance and behavior of the plot:
 
-`input_file`: the name of the Word document to analyze
-`output_file`: the name of the temporary PDF file created during the process (default: same name as input_file with a .pdf extension)
-`words`: a list of words to count in the document
-`colors`: a list of colors to use for the bars in the chart
-`num_ticks`: the number of x-axis ticks to display on the chart (default: 20)
+- `input_file`: the name of the Word document to analyze
+- `output_file`: the name of the temporary PDF file created during the process (default: same name as input_file with a .pdf extension)
+- `words`: a list of words to count in the document
+- `colors`: a list of colors to use for the bars in the chart
+- `num_ticks`: the number of x-axis ticks to display on the chart (default: 20)
 
 ## License
 
