@@ -27,7 +27,7 @@ convert(input_file, output_file)
 doc = fitz.open(output_file)
 
 # Count the occurrences of the list of words on each page
-words = ['Derecho','Uso','Tecnología','Infraestructura','Mercados Financieros','Herramienta','Incentivar','Inclusión financiera']
+words = ['lenguaje','programación','computadora','computadore','ordenador','internet','world wide web','correo electrónico', 'criptografía', 'firma', 'blockchain', 'criptomoneda', 'nube', ' api', 'big data']
 counts = count_words_per_page(words, doc)
 
 # Plot the results
@@ -54,7 +54,7 @@ ax.set_title('Occurrences of words per page')
 ax.legend()
 
 # Save the plot to a file
-plt.savefig("word_occurrences_per_page.png", dpi=300)
+plt.savefig("word_occurrences_per_page2.png", dpi=300)
 
 # Clean up the PDF file
 os.remove(output_file)
