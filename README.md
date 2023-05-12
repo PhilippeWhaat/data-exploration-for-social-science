@@ -1,3 +1,32 @@
+# Academic Paper Text Extractor
+
+This is a Python script that extracts the Abstract, Results, and Conclusion sections from a directory of PDF academic papers and stores them in a CSV file.
+
+## Requirements
+
+The script requires the following Python libraries:
+
+- `os`
+- `re`
+- `pandas`
+- `pdfminer.six`
+
+You can install any missing libraries using pip. For example:
+`pip install pandas pdfminer.six`
+
+## Usage
+
+1. Place your PDF files in a directory named `src/google_scholar` in the same directory as the Python script. The script will process all PDF files in this directory.
+
+2. Run the script:
+`python paper_extraction.py`
+
+3. The script will create a CSV file named `papers.csv` in the same directory. This file will contain the file name, abstract, results, and conclusion of each processed PDF.
+
+## Limitations
+
+Due to the variability in the structure of academic papers, the script might not perfectly extract the required sections from all documents. On our corpus, composed of 150 academic papers, it identified 84% of abstract, results and conclusion sections. More advanced techniques such as machine learning or natural language processing might be needed for accurate section extraction.
+
 # Word Occurrences Per Page
 
 This Python script analyzes the occurrences of a given list of words in a Word document and plots the occurrences per page in a bar chart. The script converts the Word document to a PDF file, then extracts the text from each page and counts the occurrences of each word. The resulting bar chart shows the word occurrences stacked on top of each other for easy visualization. The chart is saved as an image file, and the temporary PDF file created during the process is removed.
