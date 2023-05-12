@@ -1,6 +1,6 @@
 # Academic Paper Text Extractor
 
-This is a Python script that extracts the Abstract, Results, and Conclusion sections from a directory of PDF academic papers and stores them in a CSV file.
+The `paper_extraction.py` Python script extracts the Abstract, Results, and Conclusion sections from a directory of PDF academic papers and stores them in a CSV file.
 
 ## Requirements
 
@@ -25,11 +25,11 @@ You can install any missing libraries using pip. For example:
 
 ## Limitations
 
-Due to the variability in the structure of academic papers, the script might not perfectly extract the required sections from all documents. On our corpus, composed of 150 academic papers, it stored 93.3% of Abstracts, 94% of Results and 91.3% of conclusion sections, but all academic paper that we retrieved may not have those section (manual processing is needed to confirm). More advanced techniques such as machine learning or natural language processing might be needed for accurate section extraction.
+Due to the variability in the structure of academic papers, the script might not perfectly extract the required sections from all documents. On our corpus, composed of 150 academic papers, it stored 93.3% of Abstracts, 94% of Results and 91.3% of conclusion sections, but all academic paper that we retrieved may not have those sections (manual processing is needed to confirm). More advanced techniques such as machine learning or natural language processing might be needed for accurate section extraction.
 
 # Word Occurrences Per Page
 
-This Python script analyzes the occurrences of a given list of words in a Word document and plots the occurrences per page in a bar chart. The script converts the Word document to a PDF file, then extracts the text from each page and counts the occurrences of each word. The resulting bar chart shows the word occurrences stacked on top of each other for easy visualization. The chart is saved as an image file, and the temporary PDF file created during the process is removed.
+The Python `word_occurrences_per_page.py` script analyzes the occurrences of a given list of words in a Word document and plots the occurrences per page in a bar chart. The script converts the Word document to a PDF file, then extracts the text from each page and counts the occurrences of each word. The resulting bar chart shows the word occurrences stacked on top of each other for easy visualization. The chart is saved as an image file, and the temporary PDF file created during the process is removed.
 ## Dependencies
 
 The script requires the following Python libraries:
