@@ -25,7 +25,7 @@ You can install any missing libraries using pip. For example:
 
 ## Limitations
 
-Due to the variability in the structure of academic papers, the script might not perfectly extract the required sections from all documents. On our corpus, composed of 150 academic papers, it identified 84% of abstract, results and conclusion sections. More advanced techniques such as machine learning or natural language processing might be needed for accurate section extraction.
+Due to the variability in the structure of academic papers, the script might not perfectly extract the required sections from all documents. On our corpus, composed of 150 academic papers, it stored 93.3% of Abstracts, 94% of Results and 91.3% of conclusion sections, but all academic paper that we retrieved may not have those section (manual processing is needed to confirm). More advanced techniques such as machine learning or natural language processing might be needed for accurate section extraction.
 
 # Word Occurrences Per Page
 
