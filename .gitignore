@@ -11,5 +11,5 @@
 *.zip
 *.doc
 *.docx
-*.ipynb
 *.pdf
+*.xlsx
