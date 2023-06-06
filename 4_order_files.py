@@ -1,19 +1,23 @@
 import os
-import shutil
 import pandas as pd
 
-# Charger le fichier Excel
-df = pd.read_excel('/Users/philippeprince/Documents/GitHub/data-exploration-for-social-science/3_sentiment_classified_GS.xlsx')
+
+# Get the directory of the current script
+script_directory = os.path.dirname(os.path.abspath(__file__))
+
+source = 'WHOLE'
+# Construct the PDF directory path relative to the script's directory
+df = pd.read_excel(os.path.join(script_directory, f"3_sentiment_classified_{source}.xlsx"))
 
 # Trier le dataframe selon 'average_score' dans l'ordre décroissant
-df = df.sort_values('average_score', ascending=False)
+df = df.sort_values('average_score_ND', ascending=False)
 
 # Récupérer les noms de fichiers et les scores moyens
 names = df['name'].tolist()
-scores = df['average_score'].tolist()
+scores = df['average_score_ND'].tolist()
 
 # Parcourir les noms de fichiers et renommer chaque fichier
-folder = '/Users/philippeprince/Documents/GitHub/data-exploration-for-social-science/src/GS_copy/'
+folder = f'/Users/philippeprince/Documents/GitHub/data-exploration-for-social-science/src/{source}/'
 
 for i, name in enumerate(names):
     src = folder + name

@@ -19,15 +19,17 @@ def count_words_per_page(words, doc):
     return counts
 
 # Convert the Word document to a PDF
-input_file = "tecnología_infraestructuras_mercados_financieros.docx"
-output_file = "tecnología_infraestructuras_mercados_financieros.pdf"
-convert(input_file, output_file)
+input_file = "tesis.docx"
+output_file = "tesis.pdf"
+#convert(input_file, output_file)
 
 # Load the PDF document
 doc = fitz.open(output_file)
 
 # Count the occurrences of the list of words on each page
-words = ['lenguaje','programación','computadora','computadore','ordenador','internet','world wide web','correo electrónico', 'criptografía', 'firma', 'blockchain', 'criptomoneda', 'nube', ' api', 'big data']
+#words = ['REVOLUCIÓN', 'tecnológ', 'SIGLO XXI', 'digital', 'laboral', 'trabajo', 'avances', 'derecho', 'sociedad']
+words = ['Derecho',
+    'tecnología']
 counts = count_words_per_page(words, doc)
 
 # Plot the results
@@ -54,7 +56,7 @@ ax.set_title('Occurrences of words per page')
 ax.legend()
 
 # Save the plot to a file
-plt.savefig("word_occurrences_per_page2.png", dpi=300)
+plt.savefig("word_occurrences_per_page_tech_leboral_2.png", dpi=300)
 
 # Clean up the PDF file
-os.remove(output_file)
+#os.remove(output_file)
